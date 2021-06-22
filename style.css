@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-ul li {
+/* ul li {
   list-style: none;
 }
 
@@ -31,35 +31,158 @@ ul {
 li {
   padding: 0px 15px;
 }
-/* 
-main section */
+*/
+/* main section */
 
-.container {
+/* Navigation bar */
+.Nav1 ul li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+nav {
   display: flex;
-
-  height: 500px;
-}
-
-.col-2 {
-  flex-basis: 50%;
-}
-
-.container {
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  height: 70px;
   align-items: center;
 }
-
-.container .content {
-  padding-left: 70px;
+.Nav1 h1 {
+  cursor: pointer;
 }
+.Nav1 h1:hover {
+  text-decoration: underline;
+}
+.Nav1 i {
+  cursor: pointer;
+}
+.Nav1 i:hover {
+  background-color: white;
+  padding: 3px;
+}
+.nav-main {
+  background-color: aquamarine;
+}
+nav li {
+  display: inline-block;
+  padding: opx 40px;
+}
+.Nav1 li a {
+  transition: all 0.3s ease 0s;
+  padding: 0px 10px;
+}
+/* Navigation bar */
 
+/* Col-2 */
+.flex {
+  display: flex;
+}
+.col-3-content {
+  width: 33%;
+  padding: 5px;
+  text-align: center;
+}
 .btn-shop {
-  padding: 10px 21px;
+  padding: 9px 40px 10px 40px;
+  cursor: pointer;
+  border-radius: 40px;
   border: none;
-  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+.btn-shop:hover {
+  background-color: green;
+  transition: all 0.3s ease 0s;
+}
+/* Col-2 */
+
+.full {
+  background-color: aquamarine;
+  padding: 20px;
+}
+.testomnial {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+.tesim {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: solid 1px black;
+}
+.col-1 img,
+h4,
+p {
+  margin: 10px;
+  align-content: center;
+}
+.fa-star,
+.fa-star-half {
+  color: gold;
+}
+.col-1 h4 {
+  color: darkblue;
+}
+.col-1 p {
+  color: grey;
 }
 
-.content h1,
-p,
-button {
-  padding: 10px 0px;
+/* footer */
+* .footer {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  margin: auto;
+}
+.footer {
+  display: flex;
+}
+.fmain {
+  background-color: black;
+}
+.fcol-3 {
+  padding: 10px;
+  text-align: center;
+  color: grey;
+}
+.icon {
+  display: none;
+}
+/* footer */
+@media screen and (max-width: 768px) {
+  .Nav1 #cart,
+  ul li {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icon {
+    display: block;
+  }
+}
+
+.one {
+  background-color: black;
+}
+.two {
+  background-color: grey;
+}
+.three {
+  background-color: blue;
+}
+.four {
+  background-color: red;
+}
+.five {
+  background-color: yellow;
 }
